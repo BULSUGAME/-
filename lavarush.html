@@ -1,3 +1,5 @@
+LAVARUSH CODE
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3020,12 +3022,15 @@ body{font-family:'Comic Neue', Arial, sans-serif;background:#87CEEB;color:#fff}
                     SHOP
                 </button>
             </div>
-    <!-- CHANGED: Go to index.html instead of homepage.html -->
-<a href="index.html">
-    <button class="homepage-btn">BACK TO HOME</button>
-</a>
+<!-- CHANGED: Go to index.html -->
+<button class="homepage-btn" id="homepageBtn">BACK TO HOME</button>
 
-        </div>
+<script>
+  document.getElementById("homepageBtn").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
+</script>
+
         <!-- Game Over Overlay - HIDDEN BY DEFAULT -->
         <div class="game-over-overlay" id="gameOverOverlay">
             <div class="game-over-title" id="gameOverTitle">GAME OVER</div>
